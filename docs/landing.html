@@ -9,15 +9,15 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta name="Keywords" content="верстка, Pug, SCSS, JavaScript">
     <meta name="description" content="Основы верстки на Pug, SCSS и JS">
-  <link href="./vendors.04a4b7ba84b3c29abbc3.css" rel="stylesheet"><link href="./main.04a4b7ba84b3c29abbc3.css" rel="stylesheet"></head>
+  <link href="./vendors.66354fb493566324ae0a.css" rel="stylesheet"><link href="./main.66354fb493566324ae0a.css" rel="stylesheet"></head>
   <title> Страница Lending
   </title>
-  <body>
-    <div class="landing">
-      <div class="landing__header">
-        <div class="header">
-          <div class="header__logo">
-            <div class="logo"><a href="landing.html">
+  <body>   
+    <div class="landing">   
+      <header class="header">
+        <div class="content-width">
+          <div class="header-wrapper">
+            <div class="header__logo"><a class="logo" href="landing.html">
                 <div class="logo__img">
                    <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.9999 27.0589C19.3528 27.0589 18.8234 26.5295 18.8234 25.8824C18.8234 21.353 15.1175 17.6471 10.5881 17.6471C9.94103 17.6471 9.41162 17.1177 9.41162 16.4707C9.41162 15.8236 9.94103 15.2942 10.5881 15.2942C16.441 15.2942 21.1763 20.0295 21.1763 25.8824C21.1763 26.5295 20.6469 27.0589 19.9999 27.0589Z" fill="url(#paint0_linear)"/>
@@ -62,131 +62,172 @@
 </defs>
 </svg>
 
-                </div></a></div>
-          </div>
-          <div class="header__right">
-            <nav class="header__nav">
-              <ul class="header__ul header__ul_top">
-                <li class="header__item"> <a class="header__link" href="/about.html">О нас</a>
-                </li>
-                <li class="header__item"> <a class="header__link" href="/services.html">Услуги</a><i class="material-icons">expand_more</i>
-                  <ul class="header__ul header__ul_sub">
-                    <li class="header__item"> <a class="header__link-sub" href="/services1.html">Услуга 1</a></li>
-                    <li class="header__item"> <a class="header__link-sub" href="/services2.html">Услуга 2</a></li>
-                    <li class="header__item"> <a class="header__link-sub" href="/services3.html">Услуга 3</a></li>
-                  </ul>
-                </li>
-                <li class="header__item"> <a class="header__link" href="/vacancy.html">Вакансии</a>
-                </li>
-                <li class="header__item"> <a class="header__link" href="/news.html">Новости</a>
-                </li>
-                <li class="header__item"> <a class="header__link" href="/agreements.html">Соглашения</a><i class="material-icons">expand_more</i>
-                  <ul class="header__ul header__ul_sub">
-                    <li class="header__item"> <a class="header__link-sub" href="/agreements1.html">Соглашение 1</a></li>
-                    <li class="header__item"> <a class="header__link-sub" href="/agreements2.html">Соглашение 2</a></li>
-                  </ul>
-                </li>
-              </ul>
-            </nav>
-            <div class="header__sign"> 
-              <button class="button button_style-lt button_color-st button_size-sm">
-                <div class="button__text">Войти</div>
-                <div class="button__icon"><i class="material-icons"></i></div>
-              </button>
-              <button class="button button_style-st button_color-st button_size-sm">
-                <div class="button__text">Зарегистрироваться</div>
-                <div class="button__icon"><i class="material-icons"></i></div>
-              </button>
+                </div></a>
             </div>
-          </div>
-        </div>
-      </div>
-      <div class="landing__frame">
-        <div class="landing__search-rooms">
-          <form class="search-rooms">
-            <h1 class="search-rooms__title">Найдём номера под ваши пожелания        </h1>
-            <div class="search-rooms__dade-picker">
-              <div class="search-rooms__arrival-date">
-                <h3 class="search-rooms__label">Прибытие</h3>
-                <div class="search-rooms__date">
-                  <div class="date">
-                    <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" keyboardNav="true" data-multiple-dates-separator=" - " data-clearButton="true" placeholder="ДД,ММ.ГГГГ">
-                    <div class="date__icon"><i class="material-icons">expand_more</i></div>
+            <div class="header__right">
+              <div class="header__menu">
+                <nav class="menu">
+                  <ul class="menu__ul menu__ul_row">
+                    <li class="menu__item"> <a class="menu__link" href="/about.html">О нас</a>
+                    </li>
+                    <li class="menu__item"> <a class="menu__link" href="/services.html">Услуги</a><i class="material-icons">expand_more
+                        <ul class="menu__ul menu-sub__ul">
+                          <li class="menu__item menu-sub__item"><a class="menu__link menu-sub__link" href="/services1.html">Услуга 1</a></li>
+                          <li class="menu__item menu-sub__item"><a class="menu__link menu-sub__link" href="/services2.html">Услуга 2</a></li>
+                          <li class="menu__item menu-sub__item"><a class="menu__link menu-sub__link" href="/services3.html">Услуга 3</a></li>
+                        </ul></i>
+                    </li>
+                    <li class="menu__item"> <a class="menu__link" href="/vacancy.html">Вакансии</a>
+                    </li>
+                    <li class="menu__item"> <a class="menu__link" href="/news.html">Новости</a>
+                    </li>
+                    <li class="menu__item"> <a class="menu__link" href="/agreements.html">Соглашения</a><i class="material-icons">expand_more
+                        <ul class="menu__ul menu-sub__ul">
+                          <li class="menu__item menu-sub__item"><a class="menu__link menu-sub__link" href="/agreements1.html">Соглашение 1</a></li>
+                          <li class="menu__item menu-sub__item"><a class="menu__link menu-sub__link" href="/agreements2.html">Соглашение 2</a></li>
+                        </ul></i>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header__menu_mobile">
+                <div class="menu-mobile__icon"><i class="material-icons">menu</i></div>
+                <nav class="menu-mobile">
+                  <ul class="menu-mobile__ul menu-mobile__ul_column">
+                    <li class="menu-mobile__item"> <a class="menu-mobile__link" href="/about.html">О нас</a>
+                    </li>
+                    <li class="menu-mobile__item"> <a class="menu-mobile__link" href="/services.html">Услуги</a><i class="material-icons">expand_more</i>
+                      <ul class="menu-mobile__ul menu-mobile__ul_column">
+                        <li class="menu-mobile__item"> <a class="menu-mobile__link-sub" href="/services1.html">Услуга 1</a></li>
+                        <li class="menu-mobile__item"> <a class="menu-mobile__link-sub" href="/services2.html">Услуга 2</a></li>
+                        <li class="menu-mobile__item"> <a class="menu-mobile__link-sub" href="/services3.html">Услуга 3</a></li>
+                      </ul>
+                    </li>
+                    <li class="menu-mobile__item"> <a class="menu-mobile__link" href="/vacancy.html">Вакансии</a>
+                    </li>
+                    <li class="menu-mobile__item"> <a class="menu-mobile__link" href="/news.html">Новости</a>
+                    </li>
+                    <li class="menu-mobile__item"> <a class="menu-mobile__link" href="/agreements.html">Соглашения</a><i class="material-icons">expand_more</i>
+                      <ul class="menu-mobile__ul menu-mobile__ul_column">
+                        <li class="menu-mobile__item"> <a class="menu-mobile__link-sub" href="/agreements1.html">Соглашение 1</a></li>
+                        <li class="menu-mobile__item"> <a class="menu-mobile__link-sub" href="/agreements2.html">Соглашение 2</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <div class="header-sign">
+                <div class="header-sign__icon"><i class="material-icons">person</i></div>
+                <div class="header-sign__group">
+                  <div class="header-sign__button">
+                    <button class="button button_style-lt button_color-st button_size-sm">
+                      <div class="button__text">Войти</div>
+                      <div class="button__icon"><i class="material-icons"></i></div>
+                    </button>
+                    <button class="button button_style-st button_color-st button_size-sm">
+                      <div class="button__text">Зарегистрироваться</div>
+                      <div class="button__icon"><i class="material-icons"></i></div>
+                    </button>
                   </div>
                 </div>
               </div>
-              <div class="search-rooms__departure-date">
-                <h3 class="search-rooms__label">Выезд</h3>
-                <div class="search-rooms__date">
-                  <div class="date">
-                    <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" keyboardNav="true" data-multiple-dates-separator=" - " data-clearButton="true" placeholder="ДД,ММ.ГГГГ">
-                    <div class="date__icon"><i class="material-icons">expand_more</i></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main landing__main">     
+        <div class="content-width">
+          <div class="content-wrapper">
+            <div class="landing__search-rooms">
+              <form class="search-rooms">
+                <h1 class="search-rooms__title">Найдём номера под ваши пожелания        </h1>
+                <div class="search-rooms__dade-picker">
+                  <div class="search-rooms__arrival-date">
+                    <h3 class="search-rooms__label">Прибытие</h3>
+                    <div class="search-rooms__date">
+                      <div class="date">
+                        <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-clear-button="true" data-placeholder="ДД.ММ.ГГГГ" data-today-button="true">
+                        <div class="date__icon"><i class="material-icons">expand_more</i></div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="search-rooms__departure-date">
+                    <h3 class="search-rooms__label">Выезд</h3>
+                    <div class="search-rooms__date">
+                      <div class="date">
+                        <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-clear-button="true" data-placeholder="ДД.ММ.ГГГГ" data-today-button="true">
+                        <div class="date__icon"><i class="material-icons">expand_more</i></div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            <h3 class="search-rooms__label">Гости</h3>
-            <div class="search-rooms__guests">
-              <div class="dropdown dropdown-visitor">
-                <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
-                  <div class="dropdown__header">Сколько гостей</div>
-                  <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                <h3 class="search-rooms__label">Гости</h3>
+                <div class="search-rooms__guests">
+                  <div class="dropdown dropdown-visitor">
+                    <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
+                      <div class="dropdown__header">Сколько гостей</div>
+                      <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
+                    </div>
+                    <ul class="dropdown__ul">
+                      <li class="dropdown__li">
+                        <div class="dropdown__label">взрослые</div>
+                        <div class="input-number input-number-visitor0">   
+                          <button class="input-number__button js-input-number__button input-number__button_inactive minus">-</button>
+                          <input class="visitor0 input-number__input" type="number" value="0" min="0" max="10">
+                          <button class="input-number__button js-input-number__button plus">+</button>
+                        </div>
+                      </li>
+                      <li class="dropdown__li">
+                        <div class="dropdown__label">дети</div>
+                        <div class="input-number input-number-visitor1">   
+                          <button class="input-number__button js-input-number__button input-number__button_inactive minus">-</button>
+                          <input class="visitor1 input-number__input" type="number" value="0" min="0" max="10">
+                          <button class="input-number__button js-input-number__button plus">+</button>
+                        </div>
+                      </li>
+                      <li class="dropdown__li">
+                        <div class="dropdown__label">младенцы</div>
+                        <div class="input-number input-number-visitor2">   
+                          <button class="input-number__button js-input-number__button input-number__button_inactive minus">-</button>
+                          <input class="visitor2 input-number__input" type="number" value="0" min="0" max="10">
+                          <button class="input-number__button js-input-number__button plus">+</button>
+                        </div>
+                      </li>
+                      <li class="dropdown__li">
+                        <button class="button button_style-wb button_color-alt button_size-bg dropdown__clear js-dropdown__clear dropdown__clear_hidden">
+                          <div class="button__text">Очистить</div>
+                          <div class="button__icon"><i class="material-icons"></i></div>
+                        </button>
+                        <button class="button button_style-wb button_color-st button_size-bg dropdown__submit js-dropdown__submit">
+                          <div class="button__text">Применить</div>
+                          <div class="button__icon"><i class="material-icons"></i></div>
+                        </button>
+                      </li>
+                    </ul>
+                  </div>
                 </div>
-                <ul class="dropdown__ul">
-                  <li class="dropdown__li">
-                    <div class="dropdown__label">взрослые</div>
-                    <div class="input-number input-number-visitor0">   
-                      <button class="input-number__button js-input-number__button input-number__button_inactive minus">-</button>
-                      <input class="visitor0 input-number__input" type="number" value="0" min="0" max="10">
-                      <button class="input-number__button js-input-number__button plus">+</button>
-                    </div>
-                  </li>
-                  <li class="dropdown__li">
-                    <div class="dropdown__label">дети</div>
-                    <div class="input-number input-number-visitor1">   
-                      <button class="input-number__button js-input-number__button input-number__button_inactive minus">-</button>
-                      <input class="visitor1 input-number__input" type="number" value="0" min="0" max="10">
-                      <button class="input-number__button js-input-number__button plus">+</button>
-                    </div>
-                  </li>
-                  <li class="dropdown__li">
-                    <div class="dropdown__label">младенцы</div>
-                    <div class="input-number input-number-visitor2">   
-                      <button class="input-number__button js-input-number__button input-number__button_inactive minus">-</button>
-                      <input class="visitor2 input-number__input" type="number" value="0" min="0" max="10">
-                      <button class="input-number__button js-input-number__button plus">+</button>
-                    </div>
-                  </li>
-                  <li class="dropdown__li">
-                    <button class="button button_style-wb button_color-alt button_size-bg dropdown__clear js-dropdown__clear dropdown__clear_hidden">
-                      <div class="button__text">Очистить</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
-                    </button>
-                    <button class="button button_style-wb button_color-st button_size-bg dropdown__submit js-dropdown__submit">
-                      <div class="button__text">Применить</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
-                    </button>
-                  </li>
-                </ul>
-              </div>
+                <div class="search-rooms__button">
+                  <button class="button button_style-ic button_color-st button_size-bg">
+                    <div class="button__text">Подобрать номер</div>
+                    <div class="button__icon"><i class="material-icons">arrow_forward</i></div>
+                  </button>
+                </div>
+              </form>
             </div>
-            <div class="search-rooms__button">
-              <button class="button button_style-ic button_color-st button_size-bg">
-                <div class="button__text">Подобрать номер</div>
-                <div class="button__icon"><i class="material-icons">arrow_forward</i></div>
-              </button>
+            <div class="landing__slogan-wrapper">
+              <p class="landing__slogan">Лучшие номера для вашей работы, отдыха и просто вдохновения    </p>
             </div>
-          </form>
+          </div>
         </div>
-        <p class="landing__slogan">Лучшие номера для вашей работы, отдыха и просто вдохновения</p>
-      </div>
-      <div class="landing__footer">
-        <div class="footer"> 
-          <div class="footer__widgets">
-            <div class="footer__brand">
-              <div class="logo"><a href="landing.html">
-                  <div class="logo__img">
-                     <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      </main>
+      <footer class="landing-footer">     
+        <div class="footer">
+          <div class="footer__top">
+            <div class="content-width">       
+              <div class="footer__widgets">               
+                <div class="footer__brand"><a class="logo" href="landing.html">
+                    <div class="logo__img">
+                       <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
 <path d="M19.9999 27.0589C19.3528 27.0589 18.8234 26.5295 18.8234 25.8824C18.8234 21.353 15.1175 17.6471 10.5881 17.6471C9.94103 17.6471 9.41162 17.1177 9.41162 16.4707C9.41162 15.8236 9.94103 15.2942 10.5881 15.2942C16.441 15.2942 21.1763 20.0295 21.1763 25.8824C21.1763 26.5295 20.6469 27.0589 19.9999 27.0589Z" fill="url(#paint0_linear)"/>
 <path d="M30.5882 16.4707C30.5882 17.1177 30.0588 17.6471 29.4117 17.6471C26.6176 17.6471 24.1176 19.0589 22.647 21.206C22.3235 20.3824 21.9411 19.6177 21.4705 18.9118C23.4117 16.6765 26.2646 15.2942 29.4117 15.2942C30.0588 15.2942 30.5882 15.8236 30.5882 16.4707Z" fill="url(#paint1_linear)"/>
 <path d="M20 40C8.97059 40 0 31.0294 0 20C0 8.97059 8.97059 0 20 0C31.0294 0 40 8.97059 40 20C40 31.0294 31.0294 40 20 40ZM20 2.35294C10.2647 2.35294 2.35294 10.2647 2.35294 20C2.35294 29.7353 10.2647 37.6471 20 37.6471C29.7353 37.6471 37.6471 29.7353 37.6471 20C37.6471 10.2647 29.7353 2.35294 20 2.35294Z" fill="url(#paint2_linear)"/>
@@ -206,9 +247,9 @@
 </defs>
 </svg>
 
-                  </div>
-                  <div class="logo__text">
-                     <svg width="62" height="22" viewBox="0 0 62 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    </div>
+                    <div class="logo__text">
+                       <svg width="62" height="22" viewBox="0 0 62 22" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g filter="url(#filter0_d)">
 <path d="M14.335 0.368344C14.5567 0.368344 14.7375 0.444177 14.8775 0.595843C15.0292 0.735844 15.105 0.916677 15.105 1.13834C15.105 1.34834 15.0292 1.52918 14.8775 1.68084C14.7375 1.83251 14.5567 1.90834 14.335 1.90834H10.5725V12.4083C10.5725 12.63 10.4967 12.8167 10.345 12.9683C10.205 13.1083 10.0242 13.1783 9.8025 13.1783C9.5925 13.1783 9.41167 13.1083 9.26 12.9683C9.10833 12.8167 9.0325 12.63 9.0325 12.4083V1.90834H5.27C5.06 1.90834 4.87917 1.83251 4.7275 1.68084C4.57583 1.52918 4.5 1.34834 4.5 1.13834C4.5 0.916677 4.57583 0.735844 4.7275 0.595843C4.87917 0.444177 5.06 0.368344 5.27 0.368344H14.335Z" fill="#1F2041"/>
 <path d="M20.9076 0.368344C21.7943 0.368344 22.6285 0.537511 23.4101 0.875844C24.2034 1.21418 24.8918 1.67501 25.4751 2.25834C26.0701 2.84168 26.5368 3.53001 26.8751 4.32334C27.2134 5.10501 27.3826 5.93918 27.3826 6.82584C27.3826 7.86418 27.1609 8.82084 26.7176 9.69584C26.2743 10.5708 25.6735 11.3058 24.9151 11.9008C24.9151 11.9008 24.9035 11.9125 24.8801 11.9358C24.3201 12.3558 23.7076 12.6883 23.0426 12.9333C22.3776 13.1667 21.6659 13.2833 20.9076 13.2833C20.0209 13.2833 19.1868 13.1142 18.4051 12.7758C17.6234 12.4375 16.9351 11.9767 16.3401 11.3933C15.7568 10.81 15.2959 10.1275 14.9576 9.34584C14.6193 8.56418 14.4501 7.72418 14.4501 6.82584C14.4501 5.84584 14.6484 4.94168 15.0451 4.11334C15.4418 3.27334 15.9843 2.55584 16.6726 1.96084L16.7426 1.89084C16.7543 1.89084 16.7718 1.87918 16.7951 1.85584C17.3551 1.38918 17.9851 1.02751 18.6851 0.770844C19.3851 0.502511 20.1259 0.368344 20.9076 0.368344ZM20.9076 11.7433C21.3509 11.7433 21.771 11.6908 22.1676 11.5858C22.576 11.4692 22.9609 11.3117 23.3226 11.1133L17.1801 3.64084C16.8068 4.07251 16.5151 4.56251 16.3051 5.11084C16.0951 5.64751 15.9901 6.21918 15.9901 6.82584C15.9901 7.50251 16.1185 8.13834 16.3751 8.73334C16.6318 9.32834 16.9818 9.85334 17.4251 10.3083C17.8801 10.7517 18.4051 11.1017 19.0001 11.3583C19.5951 11.615 20.2309 11.7433 20.9076 11.7433ZM24.5301 10.1508C24.9384 9.70751 25.2535 9.20584 25.4751 8.64584C25.7085 8.07418 25.8251 7.46751 25.8251 6.82584C25.8251 6.14918 25.6968 5.51334 25.4401 4.91834C25.1834 4.32334 24.8276 3.80418 24.3726 3.36084C23.9293 2.90584 23.4101 2.55001 22.8151 2.29334C22.2201 2.03668 21.5843 1.90834 20.9076 1.90834C20.4409 1.90834 19.9918 1.97251 19.5601 2.10084C19.1284 2.21751 18.7259 2.39251 18.3526 2.62584L24.5301 10.1508Z" fill="#1F2041"/>
@@ -229,66 +270,74 @@
 </defs>
 </svg>
 
-                  </div></a></div>
-              <p class="footer__legend">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
-            </div>
-            <div class="listbox"> 
-              <div class="listbox__header">
-                <div class="listbox__title">Навигация</div>
-              </div>
-              <ul class="listbox__ul listbox__drop">
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/about.html">О нас</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/news.html">Новости</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/support.html">Служба поддержки</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/services.html">Услуги</a></li>
-              </ul>
-            </div>
-            <div class="listbox"> 
-              <div class="listbox__header">
-                <div class="listbox__title">О нас</div>
-              </div>
-              <ul class="listbox__ul listbox__drop">
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/about-service.html">О сервисе</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/our-team.html">Наша команда</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/vacancy.html">Вакансии</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/investors.html">Инвесторы</a></li>
-              </ul>
-            </div>
-            <div class="listbox"> 
-              <div class="listbox__header">
-                <div class="listbox__title">Служба поддержки</div>
-              </div>
-              <ul class="listbox__ul listbox__drop">
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/agreements.html">Соглашения</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/communities.html">Сообщества</a></li>
-                <li class="listbox__li_margin14"><a class="listbox__a" href="/communication-with-us.html">Связь с нами</a></li>
-              </ul>
-            </div>
-            <div class="footer__wrapper-subscribe">
-              <div class="footer__subscribe">
-                <div class="listbox"> 
-                  <div class="listbox__header">
-                    <div class="listbox__title">Подписка</div>
-                  </div>
-                  <ul class="listbox__ul listbox__drop">
-                    <li class="listbox__text">Получайте специальные предложения и новости сервиса</li>
-                  </ul>
+                    </div></a>
+                  <p class="footer__legend">Бронирование номеров в лучшем отеле 2019 года по версии ассоциации «Отельные взгляды»</p>
                 </div>
-                <div class="input"> 
-                  <input class="input__input" name="subscribe" type="email" placeholder="Email" inputmode="email">
-                  <div class="input_arrow-on"><i class="material-icons">arrow_forward</i></div>
+                <div class="footer__menu">   
+                  <div class="listbox"> 
+                    <div class="listbox__header">
+                      <div class="listbox__title">Навигация</div>
+                    </div>
+                    <ul class="listbox__ul listbox__drop">
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/about.html">О нас</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/news.html">Новости</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/support.html">Служба поддержки</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/services.html">Услуги</a></li>
+                    </ul>
+                  </div>
+                  <div class="listbox"> 
+                    <div class="listbox__header">
+                      <div class="listbox__title">О нас</div>
+                    </div>
+                    <ul class="listbox__ul listbox__drop">
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/about-service.html">О сервисе</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/our-team.html">Наша команда</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/vacancy.html">Вакансии</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/investors.html">Инвесторы</a></li>
+                    </ul>
+                  </div>
+                  <div class="listbox"> 
+                    <div class="listbox__header">
+                      <div class="listbox__title">Служба поддержки</div>
+                    </div>
+                    <ul class="listbox__ul listbox__drop">
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/agreements.html">Соглашения</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/communities.html">Сообщества</a></li>
+                      <li class="listbox__li_margin14"><a class="listbox__a" href="/communication-with-us.html">Связь с нами</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="footer__wrapper-subscribe">
+                  <div class="footer__subscribe">
+                    <div class="listbox"> 
+                      <div class="listbox__header">
+                        <div class="listbox__title">Подписка</div>
+                      </div>
+                      <ul class="listbox__ul listbox__drop">
+                        <li class="listbox__text">Получайте специальные предложения и новости сервиса</li>
+                      </ul>
+                    </div>
+                    <div class="input"> 
+                      <input class="input__input" name="subscribe" type="email" placeholder="Email" inputmode="email">
+                      <div class="input_arrow-on"><i class="material-icons">arrow_forward</i></div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="footer__copyright-bar">
-            <div class="footer__copyright-wrapper">
-              <p class="footer__copyright">Copyright © 2018 Toxin отель. Все права зачищены.    </p>
-              <div class="footer__socials"><a class="footer__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a class="footer__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square"></i></a><a class="footer__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></div>
+          <div class="footer__bottom">
+            <div class="content-width">       
+              <div class="footer__copyright-bar">                   
+                <div class="footer__copyright-wrapper">
+                  <p class="footer__copyright">Copyright © 2018 Toxin отель. Все права зачищены.    </p>
+                </div>
+                <div class="footer__socials"><a class="footer__link" href="https://twitter.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-twitter"></i></a><a class="footer__link" href="https://www.facebook.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-facebook-square"></i></a><a class="footer__link" href="https://www.instagram.com" target="_blank" rel="noopener noreferrer"><i class="fa fa-instagram"></i></a></div>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </footer>
     </div>
-  <script type="text/javascript" src="./vendors-04a4b7ba84b3c29abbc3.js"></script><script type="text/javascript" src="./main-04a4b7ba84b3c29abbc3.js"></script></body>
+  <script type="text/javascript" src="./vendors-66354fb493566324ae0a.js"></script><script type="text/javascript" src="./main-66354fb493566324ae0a.js"></script></body>
 </html>
