@@ -9,7 +9,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta name="Keywords" content="верстка, Pug, SCSS, JavaScript">
     <meta name="description" content="Основы верстки на Pug, SCSS и JS">
-  <link href="./vendors.cca7394cf34c4434d2f4.css" rel="stylesheet"><link href="./main.cca7394cf34c4434d2f4.css" rel="stylesheet"></head>
+  <link href="./vendors.cb1876d6bc0e1544341e.css" rel="stylesheet"><link href="./main.cb1876d6bc0e1544341e.css" rel="stylesheet"></head>
   <title> Страница UI-Kit
   </title>
   <body>   
@@ -130,29 +130,29 @@
         <div class="ui-kit__blok-column">
               <div class="container">
                 <div class="container-label"></div>
-                <div class="listbox"> 
+                <div class="listbox listbox_checkbox"> 
                   <div class="listbox__header js-listbox__header">
                     <div class="listbox__title">Checkbox buttons</div>
                   </div>
-                  <ul class="listbox__ul js-listbox__drop">
-                    <li class="listbox__li">                        
+                  <ul class="listbox__ul">
+                    <li class="listbox__li listbox__li_checkbox-simple"> 
                       <div class="select">
                         <label class="select__label">Можно курить
                           <input class="select__input" type="checkbox"><span class="select__span"></span>
                         </label>
                       </div>
                     </li>
-                    <li class="listbox__li">                        
+                    <li class="listbox__li listbox__li_checkbox-simple"> 
                       <div class="select">
                         <label class="select__label">Можно с питомцами
-                          <input class="select__input" type="checkbox"><span class="select__span"></span>
+                          <input class="select__input" type="checkbox" checked><span class="select__span"></span>
                         </label>
                       </div>
                     </li>
-                    <li class="listbox__li">                        
+                    <li class="listbox__li listbox__li_checkbox-simple"> 
                       <div class="select">
                         <label class="select__label">Можно пригласить гостей (до 10 человек)
-                          <input class="select__input" type="checkbox"><span class="select__span"></span>
+                          <input class="select__input" type="checkbox" checked><span class="select__span"></span>
                         </label>
                       </div>
                     </li>
@@ -177,7 +177,7 @@
                     <input type="checkbox" checked><span class="toggle__text">Получать спецпредложения</span>
                   </label>
                   <label class="toggle">
-                    <input type="checkbox" checked><span class="toggle__text">Получать спецпредложения</span>
+                    <input type="checkbox"><span class="toggle__text">Получать спецпредложения</span>
                   </label>
                 </div>
               </div>
@@ -199,7 +199,7 @@
                 <div class="ui-kit__rate-button">
                   <fieldset class="rating">
                     <legend class="rating__caption"></legend>
-                    <div class="rating__grop">
+                    <div class="rating__group">
                       <label class="rating__label">
                         <input class="rating__checkbox" type="radio" name="health" value="0"><i class="material-icons rating__star rating__star1">star</i>
                       </label>
@@ -219,7 +219,7 @@
                   </fieldset>
                   <fieldset class="rating">
                     <legend class="rating__caption"></legend>
-                    <div class="rating__grop">
+                    <div class="rating__group">
                       <label class="rating__label">
                         <input class="rating__checkbox" type="radio" name="health" value="0"><i class="material-icons rating__star rating__star1">star</i>
                       </label>
@@ -480,122 +480,36 @@
       <div class="ui-kit__blok-row">
         <div class="ui-kit__blok-column">       
           <div class="ui-kit__listbox-wrapper">
-            <div class="listbox"> 
+            <div class="listbox listbox_checkbox"> 
               <div class="listbox__header js-listbox__header">
                 <div class="listbox__title">Expandable checkbox list</div>
                 <div class="listbox__icon-wrapper">
                   <div class="js-listbox__arrow"><i class="material-icons">expand_more</i></div>
                 </div>
               </div>
-              <ul class="listbox__ul js-listbox__drop js-listbox__drop_close">
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Завтрак
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Письменный стол
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Стул для кормления
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Кроватка
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Телевизор
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Шампунь
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-              </ul>
+              <ul class="listbox__ul js-listbox__drop js-listbox__drop_close"></ul>
             </div>
           </div>
           <div class="ui-kit__listbox-wrapper">
-            <div class="listbox"> 
+            <div class="listbox listbox_checkbox"> 
               <div class="listbox__header js-listbox__header">
                 <div class="listbox__title">Expandable checkbox list</div>
                 <div class="listbox__icon-wrapper">
                   <div class="js-listbox__arrow js-listbox__arrow_rotate"><i class="material-icons">expand_more</i></div>
                 </div>
               </div>
-              <ul class="listbox__ul js-listbox__drop">
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Завтрак
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Письменный стол
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Стул для кормления
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Кроватка
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Телевизор
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-                <li class="listbox__li">                        
-                  <div class="select">
-                    <label class="select__label">Шампунь
-                      <input class="select__input" type="checkbox"><span class="select__span"></span>
-                    </label>
-                  </div>
-                </li>
-              </ul>
+              <ul class="listbox__ul js-listbox__drop"></ul>
             </div>
           </div>
         </div>
         <div class="ui-kit__blok-column">  
           <div class="ui-kit__listbox-wrapper">    
-            <div class="listbox"> 
+            <div class="listbox listbox_checkbox"> 
               <div class="listbox__header js-listbox__header">
                 <div class="listbox__title">Rich Checkbox Buttons</div>
               </div>
-              <ul class="listbox__ul js-listbox__drop">
-                <li class="listbox__li_margin9">                  
+              <ul class="listbox__ul">
+                <li class="listbox__li listbox__li_checkbox-extended">
                   <div class="listbox__name">
                     <div class="select">
                       <label class="select__label_inherit">Широкий коридор
@@ -605,7 +519,7 @@
                   </div>
                   <p class="listbox__desc">Ширина коридоров в номере не менее 91 см.</p>
                 </li>
-                <li class="listbox__li_margin9">                  
+                <li class="listbox__li listbox__li_checkbox-extended">
                   <div class="listbox__name">
                     <div class="select">
                       <label class="select__label_inherit">Помощник для инвалидов
@@ -621,11 +535,11 @@
         </div>
         <div class="ui-kit__blok-column">
           <div class="ui-kit__listbox-wrapper">    
-            <div class="listbox"> 
+            <div class="listbox listbox_ul"> 
               <div class="listbox__header js-listbox__header">
                 <div class="listbox__title">Bullet list</div>
               </div>
-              <ul class="listbox__ul js-listbox__drop">
+              <ul class="listbox__ul">
                 <div class="listbox__bulleted">
                   <ul class="listbox__bulleted-ul">
                     <li class="listbox__bulleted-li">Нельзя с питомцами</li>
@@ -647,8 +561,8 @@
         </div>
       </div>
       <div class="ui-kit__blok-row">
-        <div class="listbox"> 
-          <ul class="listbox__ul js-listbox__drop">
+        <div class="listbox listbox_checkbox"> 
+          <ul class="listbox__ul">
             <li class="listbox__li">
               <div class="listbox__item_with-icon">
                 <div class="listbox__row">
@@ -676,5 +590,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="./vendors-cca7394cf34c4434d2f4.js"></script><script type="text/javascript" src="./main-cca7394cf34c4434d2f4.js"></script></body>
+  <script type="text/javascript" src="./vendors-cb1876d6bc0e1544341e.js"></script><script type="text/javascript" src="./main-cb1876d6bc0e1544341e.js"></script></body>
 </html>
