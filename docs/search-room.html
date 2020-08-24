@@ -9,7 +9,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta name="Keywords" content="верстка, Pug, SCSS, JavaScript">
     <meta name="description" content="Основы верстки на Pug, SCSS и JS">
-  <link href="./vendors.cb1876d6bc0e1544341e.css" rel="stylesheet"><link href="./main.cb1876d6bc0e1544341e.css" rel="stylesheet"></head>
+  <link href="./vendors.c67f3b6f3e1c6ec73645.css" rel="stylesheet"><link href="./main.c67f3b6f3e1c6ec73645.css" rel="stylesheet"></head>
   <title> Search Room
   </title>
   <body>   
@@ -120,13 +120,12 @@
                 <div class="header-sign__icon"><i class="material-icons">person</i></div>
                 <div class="header-sign__group">
                   <div class="header-sign__button">
-                    <button class="button button_style-lt button_color-st button_size-sm">
+                    <button class="button button_style-lt">
+                      <div class="button__pseudo-parent_style-lt "></div>
                       <div class="button__text">Войти</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
                     </button>
-                    <button class="button button_style-st button_color-st button_size-sm">
+                    <button class="button button_style-default  button_height-md">
                       <div class="button__text">Зарегистрироваться</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
                     </button>
                   </div>
                 </div>
@@ -149,7 +148,7 @@
           <div class="search-room__block">
             <div class="search-room__block-title">Гости</div>
             <div class="search-room__block-component">
-              <div class="dropdown dropdown-numberGuests">
+              <div class="dropdown dropdown-visitor" id="numberGuests">
                 <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                   <div class="dropdown__header">3 гостя, 1 младенец</div>
                   <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
@@ -157,37 +156,39 @@
                 <ul class="dropdown__ul">
                   <li class="dropdown__li">
                     <div class="dropdown__label">взрослые</div>
-                    <div class="input-number input-number-numberGuests0">   
+                    <div class="input-number input-number-visitor0">   
                       <button class="input-number__button js-input-number__button input-number__button_inactive minus" type="button">-</button>
-                      <input class="numberGuests0 input-number__input" type="number" value="0" min="0" max="10">
+                      <input class="visitor0 input-number__input" type="number" value="0" min="0" max="10">
                       <button class="input-number__button js-input-number__button plus" type="button">+</button>
                     </div>
                   </li>
                   <li class="dropdown__li">
                     <div class="dropdown__label">дети</div>
-                    <div class="input-number input-number-numberGuests1">   
+                    <div class="input-number input-number-visitor1">   
                       <button class="input-number__button js-input-number__button input-number__button_inactive minus" type="button">-</button>
-                      <input class="numberGuests1 input-number__input" type="number" value="0" min="0" max="10">
+                      <input class="visitor1 input-number__input" type="number" value="0" min="0" max="10">
                       <button class="input-number__button js-input-number__button plus" type="button">+</button>
                     </div>
                   </li>
                   <li class="dropdown__li">
                     <div class="dropdown__label">младенцы</div>
-                    <div class="input-number input-number-numberGuests2">   
+                    <div class="input-number input-number-visitor2">   
                       <button class="input-number__button js-input-number__button input-number__button_inactive minus" type="button">-</button>
-                      <input class="numberGuests2 input-number__input" type="number" value="0" min="0" max="10">
+                      <input class="visitor2 input-number__input" type="number" value="0" min="0" max="10">
                       <button class="input-number__button js-input-number__button plus" type="button">+</button>
                     </div>
                   </li>
-                  <li class="dropdown__li">
-                    <button class="button button_style-wb button_color-alt button_size-bg dropdown__clear js-dropdown__clear dropdown__clear_hidden">
-                      <div class="button__text">Очистить</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
-                    </button>
-                    <button class="button button_style-wb button_color-st button_size-bg dropdown__submit js-dropdown__submit">
-                      <div class="button__text">Применить</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
-                    </button>
+                  <li class="dropdown__li dropdown__li_buttons">
+                    <div class="dropdown__clear js-dropdown__clear dropdown__clear_hidden">
+                      <button class="button button_style-wb button_style-wb-inactive">
+                        <div class="button__text">Очистить</div>
+                      </button>
+                    </div>
+                    <div class="dropdown__submit js-dropdown__submit">
+                      <button class="button button_style-wb ">
+                        <div class="button__text">Применить</div>
+                      </button>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -270,7 +271,7 @@
           <div class="search-room__block">
             <div class="search-room__block-title">Удобства номера</div>
             <div class="search-room__block-component">
-              <div class="dropdown dropdown-comfort">
+              <div class="dropdown dropdown-visitor" id="comfort">
                 <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                   <div class="dropdown__header">2 спальни, 2 кровати...</div>
                   <div class="dropdown__icon"><i class="material-icons">expand_more</i></div>
@@ -278,37 +279,39 @@
                 <ul class="dropdown__ul">
                   <li class="dropdown__li">
                     <div class="dropdown__label">спальни</div>
-                    <div class="input-number input-number-comfort0">   
+                    <div class="input-number input-number-visitor0">   
                       <button class="input-number__button js-input-number__button input-number__button_inactive minus" type="button">-</button>
-                      <input class="comfort0 input-number__input" type="number" value="0" min="0" max="10">
+                      <input class="visitor0 input-number__input" type="number" value="0" min="0" max="10">
                       <button class="input-number__button js-input-number__button plus" type="button">+</button>
                     </div>
                   </li>
                   <li class="dropdown__li">
                     <div class="dropdown__label">кровати</div>
-                    <div class="input-number input-number-comfort1">   
+                    <div class="input-number input-number-visitor1">   
                       <button class="input-number__button js-input-number__button input-number__button_inactive minus" type="button">-</button>
-                      <input class="comfort1 input-number__input" type="number" value="0" min="0" max="10">
+                      <input class="visitor1 input-number__input" type="number" value="0" min="0" max="10">
                       <button class="input-number__button js-input-number__button plus" type="button">+</button>
                     </div>
                   </li>
                   <li class="dropdown__li">
                     <div class="dropdown__label">ванные комнаты</div>
-                    <div class="input-number input-number-comfort2">   
+                    <div class="input-number input-number-visitor2">   
                       <button class="input-number__button js-input-number__button input-number__button_inactive minus" type="button">-</button>
-                      <input class="comfort2 input-number__input" type="number" value="0" min="0" max="10">
+                      <input class="visitor2 input-number__input" type="number" value="0" min="0" max="10">
                       <button class="input-number__button js-input-number__button plus" type="button">+</button>
                     </div>
                   </li>
-                  <li class="dropdown__li">
-                    <button class="button button_style-wb button_color-alt button_size-bg dropdown__clear js-dropdown__clear dropdown__clear_hidden">
-                      <div class="button__text">Очистить</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
-                    </button>
-                    <button class="button button_style-wb button_color-st button_size-bg dropdown__submit js-dropdown__submit">
-                      <div class="button__text">Применить</div>
-                      <div class="button__icon"><i class="material-icons"></i></div>
-                    </button>
+                  <li class="dropdown__li dropdown__li_buttons">
+                    <div class="dropdown__clear js-dropdown__clear dropdown__clear_hidden">
+                      <button class="button button_style-wb button_style-wb-inactive">
+                        <div class="button__text">Очистить</div>
+                      </button>
+                    </div>
+                    <div class="dropdown__submit js-dropdown__submit">
+                      <button class="button button_style-wb ">
+                        <div class="button__text">Применить</div>
+                      </button>
+                    </div>
                   </li>
                 </ul>
               </div>
@@ -989,5 +992,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="./vendors-cb1876d6bc0e1544341e.js"></script><script type="text/javascript" src="./main-cb1876d6bc0e1544341e.js"></script></body>
+  <script type="text/javascript" src="./vendors-c67f3b6f3e1c6ec73645.js"></script><script type="text/javascript" src="./main-c67f3b6f3e1c6ec73645.js"></script></body>
 </html>
