@@ -9,7 +9,7 @@
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
     <meta name="Keywords" content="верстка, Pug, SCSS, JavaScript">
     <meta name="description" content="Основы верстки на Pug, SCSS и JS">
-  <link href="./vendors.561bd976ed8ea265ea4d.css" rel="stylesheet"><link href="./main.561bd976ed8ea265ea4d.css" rel="stylesheet"></head>
+  <link href="./vendors.3cb776935716d1ad82a3.css" rel="stylesheet"><link href="./main.3cb776935716d1ad82a3.css" rel="stylesheet"></head>
   <title> Страница UI-Kit
   </title>
   <body>   
@@ -26,21 +26,30 @@
       <div class="ui-kit__blok-row">
         <div class="ui-kit__blok-column">
               <div class="container">
-                <div class="container-label">Text Field</div>   
+                <div class="container__header">
+                  <div class="container__label">Text Field</div>
+                  <div class="container__status">Default</div>
+                </div>   
                 <div class="input"> 
                   <input class="input__input" name="subscribe" type="email" placeholder="Email" inputmode="email">
                   <div class="input_arrow-off"><i class="material-icons">arrow_forward</i></div>
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Text Field</div> 
+                <div class="container__header">
+                  <div class="container__label">Text Field</div>
+                  <div class="container__status">Hover / Focus</div>
+                </div> 
                 <div class="input"> 
-                  <input class="input__input" name="subscribe" type="email" placeholder="Email" inputmode="email">
+                  <input class="input__input" name="subscribe" type="email" placeholder="This is pretty awesome" inputmode="email">
                   <div class="input_arrow-off"><i class="material-icons">arrow_forward</i></div>
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Dropdown</div>
+                <div class="container__header">
+                  <div class="container__label">Dropdown</div>
+                  <div class="container__status">Default</div>
+                </div>
                 <div class="dropdown dropdown-visitor" id="visitor">
                   <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                     <div class="dropdown__header">Сколько гостей</div>
@@ -87,26 +96,32 @@
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Masked text field</div>   
+                <div class="container__header">
+                  <div class="container__label">Masked text field</div>
+                  <div class="container__status">Default</div>
+                </div>   
                 <div class="input"> 
                   <input class="input__input" name="masked-text" type="text" placeholder="ДД.ММ.ГГГГ" inputmode="text">
                   <div class="input_arrow-off"><i class="material-icons">arrow_forward</i></div>
                 </div>
               </div>
               <div class="container">
-                <div class="container-label"></div>
                 <div class="ui-kit__date-dropdown">
                       <div class="container">
-                        <div class="container-label">Date Dropdown</div>
+                        <div class="container__header">
+                          <div class="container__label">Date Dropdown</div>
+                        </div>
                         <div class="date">
-                          <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-placeholder="ДД.ММ.ГГГГ" data-clear-button="true" data-today-button="true">
+                          <input class="date__input datepicker-here" type="text" placeholder="ДД.ММ.ГГГГ" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-clear-button="true" data-today-button="true">
                           <div class="date__icon"><i class="material-icons">expand_more</i></div>
                         </div>
                       </div>
                       <div class="container">
-                        <div class="container-label">Date Dropdown</div>
+                        <div class="container__header">
+                          <div class="container__label">Date Dropdown</div>
+                        </div>
                         <div class="date">
-                          <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-placeholder="ДД.ММ.ГГГГ" data-clear-button="true" data-today-button="true">
+                          <input class="date__input datepicker-here" type="text" placeholder="19.08.2019" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-clear-button="true" data-today-button="true">
                           <div class="date__icon"><i class="material-icons">expand_more</i></div>
                         </div>
                       </div>
@@ -114,14 +129,18 @@
               </div>
           <div class="ui-kit__blok-column ui-kit__blok-column_narrow">
                 <div class="container">
-                  <div class="container-label">Filter date dropdown</div>
+                  <div class="container__header">
+                    <div class="container__label">Filter date dropdown</div>
+                  </div>
                   <div class="date">
-                    <input class="date__input datepicker-here" type="text" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-placeholder="ДД.ММ.ГГГГ" data-clear-button="true" data-today-button="true">
+                    <input class="date__input datepicker-here" type="text" placeholder="19 авг - 23 авг" data-inline="false" data-range="true" data-position="bottom left" data-keyboard-nav="true" data-multiple-dates-separator=" - " data-clear-button="true" data-today-button="true">
                     <div class="date__icon"><i class="material-icons">expand_more</i></div>
                   </div>
                 </div>
                 <div class="container">
-                  <div class="container-label">Subscription text field</div>   
+                  <div class="container__header">
+                    <div class="container__label">Subscription text field</div>
+                  </div>   
                   <div class="input"> 
                     <input class="input__input" name="subscribe" type="email" placeholder="Email" inputmode="email">
                     <div class="input_arrow-on"><i class="material-icons">arrow_forward</i></div>
@@ -131,7 +150,6 @@
         </div>
         <div class="ui-kit__blok-column">
               <div class="container">
-                <div class="container-label"></div>
                 <div class="listbox listbox_checkbox"> 
                   <div class="listbox__header js-listbox__header">
                     <div class="listbox__title">Checkbox buttons</div>
@@ -162,7 +180,9 @@
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Radio Buttons</div>
+                <div class="container__header">
+                  <div class="container__label">Radio Buttons</div>
+                </div>
                 <div class="radio-buttons">
                   <label class="radio-buttons__label" for="radioButtonsMan">
                     <input class="radio-buttons__button" type="radio" name="gender" value="man" id="radioButtonsMan" checked><span class="radio-buttons__item"></span><span class="radio-buttons__text">Мужчина</span>
@@ -173,7 +193,9 @@
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Toggle</div>         
+                <div class="container__header">
+                  <div class="container__label">Toggle</div>
+                </div>         
                 <div class="ui-kit__toggle">
                   <label class="toggle">
                     <input type="checkbox" checked><span class="toggle__text">Получать спецпредложения</span>
@@ -184,7 +206,9 @@
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Like button</div> 
+                <div class="container__header">
+                  <div class="container__label">Like button</div>
+                </div> 
                 <div class="ui-kit__like">
                   <button class="like-button js-like-button" type="button">
                     <div class="like-button__icon"><i class="material-icons">favorite_border</i></div>
@@ -197,7 +221,9 @@
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Rate button</div>
+                <div class="container__header">
+                  <div class="container__label">Rate button</div>
+                </div>
                 <div class="ui-kit__rate-button">
                   <fieldset class="rating">
                     <legend class="rating__caption"></legend>
@@ -254,7 +280,9 @@
           </div>
           <div class="ui-kit__buttons">
                 <div class="container">
-                  <div class="container-label">buttons</div>
+                  <div class="container__header">
+                    <div class="container__label">buttons</div>
+                  </div>
                   <div class="ui-kit__blok-row ui-kit__blok-row_flex-start">
                     <div class="ui-kit__button-wrapper">
                       <button class="button button_style-default  button_height-md">
@@ -301,7 +329,9 @@
           </div>
           <div class="ui-kit__pagination">
                 <div class="container">
-                  <div class="container-label">Pagination</div>
+                  <div class="container__header">
+                    <div class="container__label">Pagination</div>
+                  </div>
                   <nav class="pagination">   
                     <ul class="pagination__ul">
                       <li class="pagination__li"><a class="pagination__item pagination__item_active" href="#"> <span class="pagination__number">1</span></a></li>
@@ -322,7 +352,10 @@
       <div class="ui-kit__blok-row">
         <div class="ui-kit__blok-column">
               <div class="container">
-                <div class="container-label">Dropdown</div>
+                <div class="container__header">
+                  <div class="container__label">Dropdown</div>
+                  <div class="container__status">Default</div>
+                </div>
                 <div class="dropdown dropdown-comfort" id="comfort1">
                   <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                     <div class="dropdown__header">Какие удобства</div>
@@ -369,7 +402,10 @@
                 </div>
               </div>
               <div class="container">
-                <div class="container-label">Dropdown</div>
+                <div class="container__header">
+                  <div class="container__label">Dropdown</div>
+                  <div class="container__status">Expanded</div>
+                </div>
                 <div class="dropdown dropdown-comfort open" id="comfort2">
                   <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                     <div class="dropdown__header">Какие удобства</div>
@@ -405,7 +441,9 @@
               </div>
         </div>
             <div class="container">
-              <div class="container-label">Dropdown</div>
+              <div class="container__header">
+                <div class="container__label">Dropdown</div>
+              </div>
               <div class="dropdown dropdown-visitor open" id="visitor1">
                 <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                   <div class="dropdown__header">Сколько гостей</div>
@@ -452,7 +490,9 @@
               </div>
             </div>
             <div class="container">
-              <div class="container-label">Dropdown</div>
+              <div class="container__header">
+                <div class="container__label">Dropdown</div>
+              </div>
               <div class="dropdown dropdown-visitor open" id="visitor2">
                 <div class="dropdown__header-wrapper js-dropdown__header-wrapper">
                   <div class="dropdown__header">Сколько гостей</div>
@@ -724,5 +764,5 @@
         </div>
       </div>
     </div>
-  <script type="text/javascript" src="./vendors-561bd976ed8ea265ea4d.js"></script><script type="text/javascript" src="./main-561bd976ed8ea265ea4d.js"></script></body>
+  <script type="text/javascript" src="./vendors-3cb776935716d1ad82a3.js"></script><script type="text/javascript" src="./main-3cb776935716d1ad82a3.js"></script></body>
 </html>
